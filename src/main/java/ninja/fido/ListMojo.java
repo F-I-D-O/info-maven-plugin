@@ -19,8 +19,6 @@ public class ListMojo extends AbstractMojo {
         // get path to the .m2 directory
         String m2Path = System.getProperty("user.home") + "/.m2";
 
-//        String m2Path = System.getProperty("user.home") + ".m2/repository/ninja/fido/info-maven-plugin/1.0-SNAPSHOT";
-
         // process the .m2 directory recursively
         List<String> paths;
         try (Stream<Path> stream = Files.walk(Paths.get(m2Path))) {
